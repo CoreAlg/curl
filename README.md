@@ -18,7 +18,7 @@ use CoreAlg\Curl;
 
 $curl = new Curl();
 $response = $curl->get('https://www.lipsum.com/');
-var_dump($response)
+var_dump($response);
 ```
 
 ```php
@@ -37,7 +37,7 @@ $options = [
 ];
 
 $response = $curl->get('https://www.lipsum.com/', $options);
-var_dump($response)
+var_dump($response);
 ```
 
 ```php
@@ -57,7 +57,7 @@ $curl = new Curl();
 // ];
 
 $response = $curl->getFileSize("https://dummyimage.com/250/ffffff/000000");
-var_dump($response)
+var_dump($response);
 ```
 
 ```php
@@ -74,11 +74,11 @@ $data = [
 $options = [];
 
 $response = $curl->post('https://www.lipsum.com/', $data, $options);
-var_dump($response)
+var_dump($response)/
 
-*NOTE: $data and $options both are optional parameter
+// NOTE: $data and $options both are optional parameter
 
-*NOTE: $data array will be converted to json before execute request, so you do not need to worry about it just feel free to make and pass your $data array
+// NOTE: $data array will be converted to json before execute request, so you do not need to worry about it just feel free to make and pass your $data array
 ```
 
 ```php
@@ -95,9 +95,9 @@ $data = [
 $options = [];
 
 $response = $curl->patch('https://www.lipsum.com/', $data, $options);
-var_dump($response)
+var_dump($response);
 
-*NOTE: $data and $options both are optional parameter
+// NOTE: $data and $options both are optional parameter
 
-*NOTE: $data array will be converted to json before execute request, so you do not need to worry about it just feel free to make and pass your $data array
+// NOTE: $data array will be converted to json before execute request, so you do not need to worry about it just feel free to make and pass your $data array
 ```
